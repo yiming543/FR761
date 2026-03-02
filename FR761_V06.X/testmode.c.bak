@@ -1,0 +1,102 @@
+/*
+ * File:   testmode.c
+ * Author: T00904
+ *
+ * Created on 2026年2月23日, 下午 1:09
+ */
+
+#include "testmode.h"
+#include "gpio.h"
+#include "timer.h"
+#include "func_ws2811.h"
+
+void testmode(void);
+
+// testmode use
+uint8_t mode = 0;
+
+void testmode(void) {
+  bool fTurn_old = 0;
+  uint8_t mode_old = 0;
+  // TEST GPIO & LED
+  // fColorSeletDisable = 1;
+  HiBeam_en1 = 1;
+  HiBeam_en2 = 1;
+  // ftest = 1;
+
+  while (SW_IN_PORT == 1) {
+    Timer_TESTMODE();
+    // 換模式
+
+    // 換顏色
+    if (Turn_IN == 1) {
+      YL_en = 1;
+      WL_en = 0;
+    } else {
+      YL_en = 0;
+      WL_en = 1;
+    }
+
+    // 模式切換
+    if ((mode == 0) && (mode != mode_old)) {
+      mode_old = 0;
+      HiBeam_en1 = 1;
+      HiBeam_en2 = 1;
+      LoBeam_en = 0;
+      LED_OFF();
+      T250MS_cnt = 0;
+      while (T250MS_cnt > 1) {
+        Timer_TESTMODE();
+      }
+    } else if ((mode == 1) && (mode != mode_old)) {
+      mode_old = 1;
+      HiBeam_en1 = 1;
+      HiBeam_en2 = 1;
+      LoBeam_ON();
+      LED_OFF();
+      T250MS_cnt = 0;
+      while (T250MS_cnt > 1) {
+        Timer_TESTMODE();
+      }
+    } else if ((mode == 2) && (mode != mode_old)) {
+      mode_old = 2;
+      HiBeam_en1 = 0;
+      HiBeam_en2 = 0;
+      LoBeam_en = 0;
+      LED_ON(PWM_DUTY_10);
+      T250MS_cnt = 0;
+      while (T250MS_cnt > 1) {
+        Timer_TESTMODE();
+      }
+    } else if ((mode == 3) && (mode != mode_old)) {
+      mode_old = 3;
+      HiBeam_en1 = 0;
+      HiBeam_en2 = 0;
+      LoBeam_en = 0;
+      LED_ON(PWM_DUTY);
+      T250MS_cnt = 0;
+      while (T250MS_cnt > 1) {
+        Timer_TESTMODE();
+      }
+    }
+
+    if ((Turn_IN == 1) && (fTurn_old == 0)) {
+      fTurn_old = 1; // 黃光
+      YL_en = 1;
+      WL_en = 0;
+      Streamer_SEG1_TEST(5);
+      Streamer_SEG2_TEST(5);
+    } else if ((Turn_IN == 0) && (fTurn_old == 1)) {
+      fTurn_old = 0; // 白光
+      YL_en = 0;
+      WL_en = 1;
+      Streamer_SEG1_TEST(5);
+      Streamer_SEG2_TEST(5);
+    }
+  }
+  HiBeam_en1 = 0;
+  HiBeam_en2 = 0;
+  LoBeam_en = 0;
+  LED_OFF();
+  DELAY_1ms();
+}

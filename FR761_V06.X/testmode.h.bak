@@ -1,0 +1,25 @@
+/* 
+ * File:   testmode.h
+ * Author: T00904
+ *
+ * Created on 2026年2月23日, 下午 1:12
+ */
+
+#ifndef TESTMODE_H
+#define	TESTMODE_H
+
+#include <xc.h>
+#include "mcc_generated_files/pin_manager.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+extern void testmode(void);
+extern void LoBeam_ON(void);
+extern void LoBeam_OFF(void);
+extern void HiBeam_ON(void);
+extern void HiBeam_OFF(void);
+
+
+
+#endif	/* TESTMODE_H */
+
