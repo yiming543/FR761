@@ -1,0 +1,682 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1936 ]
+[d frameptr 6 ]
+"293 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[e E2766 COLOR `uc
+COLOR_YELLOW 0
+COLOR_WHITE 1
+]
+"38 D:\yiming\00work\FR761_V05_test2.X\timer.c
+[e E45 . `uc
+eTurn 0
+ePOS 1
+eDRL 2
+eACC 3
+eLoBeam 4
+eHiBeam 5
+eMAX 6
+]
+"10 c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 c:\PROGRA~1\MICROC~1\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"23 D:\yiming\00work\FR761_V05_test2.X\func_main.c
+[v _Clear_No_Call_Warning Clear_No_Call_Warning `(v  1 e 1 0 ]
+"49
+[v _software_Initialize software_Initialize `(v  1 e 1 0 ]
+"60
+[v _func_main func_main `(v  1 e 1 0 ]
+"34 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[v _LED_OFF LED_OFF `(v  1 e 1 0 ]
+"40
+[v _LED_ON LED_ON `(v  1 e 1 0 ]
+"47
+[v _LED_SET_Gradually_ON LED_SET_Gradually_ON `(v  1 e 1 0 ]
+"63
+[v _Streamer_SEG1_ON Streamer_SEG1_ON `(v  1 e 1 0 ]
+"82
+[v _Streamer_SEG1_TEST Streamer_SEG1_TEST `(v  1 e 1 0 ]
+"98
+[v _Streamer_SEG1_OFF Streamer_SEG1_OFF `(v  1 e 1 0 ]
+"118
+[v _Streamer_SEG2_ON Streamer_SEG2_ON `(v  1 e 1 0 ]
+"137
+[v _Streamer_SEG2_TEST Streamer_SEG2_TEST `(v  1 e 1 0 ]
+"153
+[v _WelcomeLight WelcomeLight `(v  1 e 1 0 ]
+"226
+[v _TrunLight TrunLight `(v  1 e 1 0 ]
+"291
+[v _DRL_Light DRL_Light `(v  1 e 1 0 ]
+"307
+[v _POS_Light POS_Light `(v  1 e 1 0 ]
+"25 D:\yiming\00work\FR761_V05_test2.X\gpio.c
+[v _LoBeam_ON LoBeam_ON `(v  1 e 1 0 ]
+"30
+[v _LoBeam_OFF LoBeam_OFF `(v  1 e 1 0 ]
+"35
+[v _HiBeam_ON HiBeam_ON `(v  1 e 1 0 ]
+"40
+[v _HiBeam_OFF HiBeam_OFF `(v  1 e 1 0 ]
+"45
+[v _CheckGPIO CheckGPIO `(v  1 e 1 0 ]
+"117 D:\yiming\00work\FR761_V05_test2.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"50 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"99
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"64 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr4.c
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+"79
+[v _TMR4_StartTimer TMR4_StartTimer `(v  1 e 1 0 ]
+"85
+[v _TMR4_StopTimer TMR4_StopTimer `(v  1 e 1 0 ]
+"91
+[v _TMR4_ReadTimer TMR4_ReadTimer `(uc  1 e 1 0 ]
+"100
+[v _TMR4_WriteTimer TMR4_WriteTimer `(v  1 e 1 0 ]
+"106
+[v _TMR4_LoadPeriodRegister TMR4_LoadPeriodRegister `(v  1 e 1 0 ]
+"111
+[v _TMR4_HasOverflowOccured TMR4_HasOverflowOccured `(a  1 e 1 0 ]
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr6.c
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+"32 D:\yiming\00work\FR761_V05_test2.X\PWM.c
+[v _PWM_SendData PWM_SendData `(v  1 e 1 0 ]
+"55
+[v _LED_SET LED_SET `(v  1 e 1 0 ]
+"24 D:\yiming\00work\FR761_V05_test2.X\timer.c
+[v _Timer4 Timer4 `(v  1 e 1 0 ]
+"53
+[v _Timer Timer `(v  1 e 1 0 ]
+"101
+[v _Timer_TESTMODE Timer_TESTMODE `(v  1 e 1 0 ]
+"138
+[v _Delay_ms Delay_ms `(v  1 e 1 0 ]
+[s S383 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"446 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1936.h
+[u S392 . 1 `S383 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES392  1 e 1 @12 ]
+[s S230 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"508
+[u S239 . 1 `S230 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES239  1 e 1 @13 ]
+[s S362 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"570
+[u S371 . 1 `S362 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES371  1 e 1 @14 ]
+[s S572 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"653
+[u S581 . 1 `S572 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES581  1 e 1 @17 ]
+[s S25 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TMR6IF 1 0 :1:3 
+`uc 1 CCP3IF 1 0 :1:4 
+`uc 1 CCP4IF 1 0 :1:5 
+`uc 1 CCP5IF 1 0 :1:6 
+]
+"771
+[u S33 . 1 `S25 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES33  1 e 1 @19 ]
+"1017
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"1037
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1057
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1222
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1284
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1346
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1408
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S508 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1617
+[s S517 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S522 . 1 `S508 1 . 1 0 `S517 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES522  1 e 1 @149 ]
+"1728
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1787
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1845
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2187
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S341 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2204
+[u S350 . 1 `S341 1 . 1 0 ]
+[v _LATAbits LATAbits `VES350  1 e 1 @268 ]
+"2249
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S320 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2266
+[u S329 . 1 `S320 1 . 1 0 ]
+[v _LATBbits LATBbits `VES329  1 e 1 @269 ]
+"2311
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S208 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2328
+[u S217 . 1 `S208 1 . 1 0 ]
+[v _LATCbits LATCbits `VES217  1 e 1 @270 ]
+"2373
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"2666
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"3015
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"3071
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3129
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3696
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3766
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+[s S554 . 1 `uc 1 C5TSEL0 1 0 :1:0 
+`uc 1 C5TSEL1 1 0 :1:1 
+]
+"4971
+[s S557 . 1 `uc 1 C5TSEL 1 0 :2:0 
+]
+[u S559 . 1 `S554 1 . 1 0 `S557 1 . 1 0 ]
+[v _CCPTMRS1bits CCPTMRS1bits `VES559  1 e 1 @671 ]
+"5432
+[v _CCPR5L CCPR5L `VEuc  1 e 1 @796 ]
+"5452
+[v _CCPR5H CCPR5H `VEuc  1 e 1 @797 ]
+"5472
+[v _CCP5CON CCP5CON `VEuc  1 e 1 @798 ]
+"5732
+[v _TMR4 TMR4 `VEuc  1 e 1 @1045 ]
+"5752
+[v _PR4 PR4 `VEuc  1 e 1 @1046 ]
+"5772
+[v _T4CON T4CON `VEuc  1 e 1 @1047 ]
+[s S617 . 1 `uc 1 T4CKPS0 1 0 :1:0 
+`uc 1 T4CKPS1 1 0 :1:1 
+`uc 1 TMR4ON 1 0 :1:2 
+`uc 1 T4OUTPS0 1 0 :1:3 
+`uc 1 T4OUTPS1 1 0 :1:4 
+`uc 1 T4OUTPS2 1 0 :1:5 
+`uc 1 T4OUTPS3 1 0 :1:6 
+]
+"5793
+[s S625 . 1 `uc 1 T4CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T4OUTPS 1 0 :4:3 
+]
+[u S629 . 1 `S617 1 . 1 0 `S625 1 . 1 0 ]
+[v _T4CONbits T4CONbits `VES629  1 e 1 @1047 ]
+"5843
+[v _TMR6 TMR6 `VEuc  1 e 1 @1052 ]
+"5863
+[v _PR6 PR6 `VEuc  1 e 1 @1053 ]
+"5883
+[v _T6CON T6CON `VEuc  1 e 1 @1054 ]
+"8074
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"8791
+[v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
+"16 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[v _i i `us  1 e 2 0 ]
+"14 D:\yiming\00work\FR761_V05_test2.X\gpio.c
+[v _fLoBeam fLoBeam `a  1 e 1 0 ]
+"15
+[v _fHiBeam fHiBeam `a  1 e 1 0 ]
+"16
+[v _fACC fACC `a  1 e 1 0 ]
+"17
+[v _fTurn fTurn `a  1 e 1 0 ]
+"18
+[v _fPOS fPOS `a  1 e 1 0 ]
+"19
+[v _fDRL fDRL `a  1 e 1 0 ]
+"12 D:\yiming\00work\FR761_V05_test2.X\timer.c
+[v _T100us_cnt T100us_cnt `uc  1 e 1 0 ]
+"13
+[v _T100us_cnt1 T100us_cnt1 `uc  1 e 1 0 ]
+"14
+[v _T1MS_cnt T1MS_cnt `us  1 e 2 0 ]
+"15
+[v _T1MS_disable_cnt T1MS_disable_cnt `us  1 e 2 0 ]
+"16
+[v _T5MS_cnt T5MS_cnt `uc  1 e 1 0 ]
+"17
+[v _T250MS_cnt T250MS_cnt `uc  1 e 1 0 ]
+"19
+[v _fWelcome fWelcome `a  1 e 1 0 ]
+"21
+[v _mode mode `uc  1 e 1 0 ]
+[s S163 . 1 `uc 1 fTurn 1 0 :1:0 
+`uc 1 fPOS 1 0 :1:1 
+`uc 1 fDRL 1 0 :1:2 
+`uc 1 fACC 1 0 :1:3 
+`uc 1 fLoBeam 1 0 :1:4 
+`uc 1 fHiBeam 1 0 :1:5 
+`uc 1 reserved 1 0 :2:6 
+]
+"22
+[u S171 . 1 `S163 1 . 1 0 `uc 1 all_flags 1 0 ]
+[v _ORB ORB `S171  1 e 1 0 ]
+"117 D:\yiming\00work\FR761_V05_test2.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"127
+} 0
+"49 D:\yiming\00work\FR761_V05_test2.X\func_main.c
+[v _software_Initialize software_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"23
+[v _Clear_No_Call_Warning Clear_No_Call_Warning `(v  1 e 1 0 ]
+{
+"47
+} 0
+"101 D:\yiming\00work\FR761_V05_test2.X\timer.c
+[v _Timer_TESTMODE Timer_TESTMODE `(v  1 e 1 0 ]
+{
+"136
+} 0
+"100 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr4.c
+[v _TMR4_WriteTimer TMR4_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR4_WriteTimer@timerVal timerVal `uc  1 a 1 wreg ]
+[v TMR4_WriteTimer@timerVal timerVal `uc  1 a 1 wreg ]
+"103
+[v TMR4_WriteTimer@timerVal timerVal `uc  1 a 1 0 ]
+"104
+} 0
+"85
+[v _TMR4_StopTimer TMR4_StopTimer `(v  1 e 1 0 ]
+{
+"89
+} 0
+"79
+[v _TMR4_StartTimer TMR4_StartTimer `(v  1 e 1 0 ]
+{
+"83
+} 0
+"91
+[v _TMR4_ReadTimer TMR4_ReadTimer `(uc  1 e 1 0 ]
+{
+"98
+} 0
+"106
+[v _TMR4_LoadPeriodRegister TMR4_LoadPeriodRegister `(v  1 e 1 0 ]
+{
+[v TMR4_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 wreg ]
+[v TMR4_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 wreg ]
+"108
+[v TMR4_LoadPeriodRegister@periodVal periodVal `uc  1 a 1 0 ]
+"109
+} 0
+"111
+[v _TMR4_HasOverflowOccured TMR4_HasOverflowOccured `(a  1 e 1 0 ]
+{
+"114
+[v TMR4_HasOverflowOccured@status status `a  1 a 1 0 ]
+"121
+} 0
+"137 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[v _Streamer_SEG2_TEST Streamer_SEG2_TEST `(v  1 e 1 0 ]
+{
+[v Streamer_SEG2_TEST@InputData InputData `uc  1 a 1 wreg ]
+"141
+[v Streamer_SEG2_TEST@i i `uc  1 a 1 13 ]
+"139
+[v Streamer_SEG2_TEST@num num `uc  1 a 1 12 ]
+"138
+[v Streamer_SEG2_TEST@data data `uc  1 a 1 11 ]
+"137
+[v Streamer_SEG2_TEST@InputData InputData `uc  1 a 1 wreg ]
+[v Streamer_SEG2_TEST@InputData InputData `uc  1 a 1 10 ]
+"150
+} 0
+"82
+[v _Streamer_SEG1_TEST Streamer_SEG1_TEST `(v  1 e 1 0 ]
+{
+[v Streamer_SEG1_TEST@InputData InputData `uc  1 a 1 wreg ]
+"86
+[v Streamer_SEG1_TEST@i i `uc  1 a 1 13 ]
+"84
+[v Streamer_SEG1_TEST@num num `uc  1 a 1 12 ]
+"83
+[v Streamer_SEG1_TEST@data data `uc  1 a 1 11 ]
+"82
+[v Streamer_SEG1_TEST@InputData InputData `uc  1 a 1 wreg ]
+[v Streamer_SEG1_TEST@InputData InputData `uc  1 a 1 10 ]
+"95
+} 0
+"99 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"101
+} 0
+"60 D:\yiming\00work\FR761_V05_test2.X\func_main.c
+[v _func_main func_main `(v  1 e 1 0 ]
+{
+"95
+} 0
+"153 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[v _WelcomeLight WelcomeLight `(v  1 e 1 0 ]
+{
+"223
+} 0
+"118
+[v _Streamer_SEG2_ON Streamer_SEG2_ON `(v  1 e 1 0 ]
+{
+[v Streamer_SEG2_ON@InputData InputData `uc  1 a 1 wreg ]
+"122
+[v Streamer_SEG2_ON@j j `uc  1 a 1 13 ]
+"120
+[v Streamer_SEG2_ON@num num `uc  1 a 1 12 ]
+"119
+[v Streamer_SEG2_ON@data data `uc  1 a 1 11 ]
+"118
+[v Streamer_SEG2_ON@InputData InputData `uc  1 a 1 wreg ]
+[v Streamer_SEG2_ON@InputData InputData `uc  1 a 1 10 ]
+"135
+} 0
+"63
+[v _Streamer_SEG1_ON Streamer_SEG1_ON `(v  1 e 1 0 ]
+{
+[v Streamer_SEG1_ON@InputData InputData `uc  1 a 1 wreg ]
+"67
+[v Streamer_SEG1_ON@j j `uc  1 a 1 13 ]
+"65
+[v Streamer_SEG1_ON@num num `uc  1 a 1 12 ]
+"64
+[v Streamer_SEG1_ON@data data `uc  1 a 1 11 ]
+"63
+[v Streamer_SEG1_ON@InputData InputData `uc  1 a 1 wreg ]
+[v Streamer_SEG1_ON@InputData InputData `uc  1 a 1 10 ]
+"80
+} 0
+"98
+[v _Streamer_SEG1_OFF Streamer_SEG1_OFF `(v  1 e 1 0 ]
+{
+[v Streamer_SEG1_OFF@InputData InputData `uc  1 a 1 wreg ]
+"102
+[v Streamer_SEG1_OFF@j j `uc  1 a 1 13 ]
+"100
+[v Streamer_SEG1_OFF@num num `uc  1 a 1 12 ]
+"99
+[v Streamer_SEG1_OFF@data data `uc  1 a 1 11 ]
+"98
+[v Streamer_SEG1_OFF@InputData InputData `uc  1 a 1 wreg ]
+[v Streamer_SEG1_OFF@InputData InputData `uc  1 a 1 10 ]
+"115
+} 0
+"47
+[v _LED_SET_Gradually_ON LED_SET_Gradually_ON `(v  1 e 1 0 ]
+{
+[v LED_SET_Gradually_ON@InputData InputData `uc  1 a 1 wreg ]
+"51
+[v LED_SET_Gradually_ON@j j `i  1 a 2 11 ]
+"47
+[v LED_SET_Gradually_ON@InputData InputData `uc  1 a 1 wreg ]
+[v LED_SET_Gradually_ON@InputData InputData `uc  1 a 1 10 ]
+"59
+} 0
+"226
+[v _TrunLight TrunLight `(v  1 e 1 0 ]
+{
+[v TrunLight@InputData InputData `uc  1 a 1 wreg ]
+"231
+[v TrunLight@seg2_num seg2_num `uc  1 a 1 4 ]
+"230
+[v TrunLight@seg1_num seg1_num `uc  1 a 1 3 ]
+"229
+[v TrunLight@data data `uc  1 a 1 2 ]
+"228
+[v TrunLight@j j `uc  1 a 1 1 ]
+"226
+[v TrunLight@InputData InputData `uc  1 a 1 wreg ]
+[v TrunLight@InputData InputData `uc  1 a 1 0 ]
+"289
+} 0
+"34
+[v _LED_OFF LED_OFF `(v  1 e 1 0 ]
+{
+"37
+} 0
+"24 D:\yiming\00work\FR761_V05_test2.X\timer.c
+[v _Timer4 Timer4 `(v  1 e 1 0 ]
+{
+"37
+[v Timer4@temp temp `uc  1 a 1 1 ]
+"25
+[v Timer4@T1ms_cnt T1ms_cnt `uc  1 s 1 T1ms_cnt ]
+[s S163 . 1 `uc 1 fTurn 1 0 :1:0 
+`uc 1 fPOS 1 0 :1:1 
+`uc 1 fDRL 1 0 :1:2 
+`uc 1 fACC 1 0 :1:3 
+`uc 1 fLoBeam 1 0 :1:4 
+`uc 1 fHiBeam 1 0 :1:5 
+`uc 1 reserved 1 0 :2:6 
+]
+"26
+[u S171 . 1 `S163 1 . 1 0 `uc 1 all_flags 1 0 ]
+[v Timer4@TRB TRB `S171  1 s 1 TRB ]
+"51
+} 0
+"307 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[v _POS_Light POS_Light `(v  1 e 1 0 ]
+{
+"321
+} 0
+"25 D:\yiming\00work\FR761_V05_test2.X\gpio.c
+[v _LoBeam_ON LoBeam_ON `(v  1 e 1 0 ]
+{
+"28
+} 0
+"30
+[v _LoBeam_OFF LoBeam_OFF `(v  1 e 1 0 ]
+{
+"33
+} 0
+"35
+[v _HiBeam_ON HiBeam_ON `(v  1 e 1 0 ]
+{
+"38
+} 0
+"40
+[v _HiBeam_OFF HiBeam_OFF `(v  1 e 1 0 ]
+{
+"43
+} 0
+"291 D:\yiming\00work\FR761_V05_test2.X\func_ws2811.c
+[v _DRL_Light DRL_Light `(v  1 e 1 0 ]
+{
+"305
+} 0
+"40
+[v _LED_ON LED_ON `(v  1 e 1 0 ]
+{
+[v LED_ON@InputData InputData `uc  1 a 1 wreg ]
+"41
+[v LED_ON@data data `uc  1 a 1 10 ]
+"40
+[v LED_ON@InputData InputData `uc  1 a 1 wreg ]
+[v LED_ON@InputData InputData `uc  1 a 1 9 ]
+"43
+} 0
+"55 D:\yiming\00work\FR761_V05_test2.X\PWM.c
+[v _LED_SET LED_SET `(v  1 e 1 0 ]
+{
+[v LED_SET@LED_num LED_num `uc  1 a 1 wreg ]
+"59
+[v LED_SET@i i `uc  1 a 1 8 ]
+"57
+[v LED_SET@num num `uc  1 a 1 7 ]
+"56
+[v LED_SET@data data `uc  1 a 1 6 ]
+"55
+[v LED_SET@LED_num LED_num `uc  1 a 1 wreg ]
+[v LED_SET@InputData InputData `uc  1 p 1 3 ]
+[v LED_SET@LED_num LED_num `uc  1 a 1 5 ]
+"62
+} 0
+"32
+[v _PWM_SendData PWM_SendData `(v  1 e 1 0 ]
+{
+[v PWM_SendData@InputData InputData `uc  1 a 1 wreg ]
+"33
+[v PWM_SendData@bitmask bitmask `uc  1 a 1 2 ]
+"34
+[v PWM_SendData@data data `uc  1 a 1 1 ]
+"32
+[v PWM_SendData@InputData InputData `uc  1 a 1 wreg ]
+[v PWM_SendData@InputData InputData `uc  1 a 1 0 ]
+"52
+} 0
+"138 D:\yiming\00work\FR761_V05_test2.X\timer.c
+[v _Delay_ms Delay_ms `(v  1 e 1 0 ]
+{
+"139
+[v Delay_ms@ms ms `us  1 a 2 3 ]
+"138
+[v Delay_ms@input_ms input_ms `us  1 p 2 1 ]
+"145
+} 0
+"53
+[v _Timer Timer `(v  1 e 1 0 ]
+{
+"99
+} 0
+"45 D:\yiming\00work\FR761_V05_test2.X\gpio.c
+[v _CheckGPIO CheckGPIO `(v  1 e 1 0 ]
+{
+"64
+} 0
+"50 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"76
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr6.c
+[v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr4.c
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"64 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"55 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"62 D:\yiming\00work\FR761_V05_test2.X\mcc_generated_files\mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
